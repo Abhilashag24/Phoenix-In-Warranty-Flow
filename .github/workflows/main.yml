@@ -31,7 +31,6 @@ on:
               -e 'QA.postman_environment.json' \
               -d 'testdata.csv' \
               -r cli,htmlextra
-        -name: 
          
                 
           
