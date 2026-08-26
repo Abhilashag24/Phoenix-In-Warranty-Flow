@@ -8,10 +8,10 @@ on:
     - cron: '00 16 * * *' # 8:00 AM UTC+4  
     - cron: '00 04 * * *' # 8:00 PM UTC+4 
    # - cron: '00 06 * * 1-5' -> Runs five days mon to fri
-jobs:
-  run_postman_tests:
-      runs-on: ubuntu-latest
-      steps:
+   jobs:
+     run_postman_tests:
+       runs-on: ubuntu-latest
+       steps:
         - name: Checkout the code
           uses: actions/checkout@v6.1.0
           
