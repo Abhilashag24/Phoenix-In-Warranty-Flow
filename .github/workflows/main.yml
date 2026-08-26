@@ -38,6 +38,7 @@ jobs:
              path: newman/*.html
              
         - name: Creating github page branch
+          if: always()
            # You may pin to the exact commit or the version.
            # uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453
           uses: peaceiris/actions-gh-pages@v4.1.0
