@@ -19,12 +19,10 @@ on:
           uses: actions/setup-node@v6.5.0
           with: 
                 node-version: '22'
-
         -name: Install newman and htmlextra globally
         run: |
                npm install -g newman 
                npm install -g newman-reporter-htmlextra
-
         -name: Run the Potsman Collection with Newman
         run:  |
               newman run 'InWarrenty-flow collection QA.postman_collection.json' \
