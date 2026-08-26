@@ -7,8 +7,8 @@ on:
   schedule:
     - cron: '00 16 * * *' # 8:00 AM UTC+4  
     - cron: '00 04 * * *' # 8:00 PM UTC+4 
-   # - cron: '00 06 * * 1-5' -> Runs five days mon to fri
-   jobs:
+    #- cron: '00 06 * * 1-5' -> Runs five days mon to fri
+jobs:
      run_postman_tests:
        runs-on: ubuntu-latest
        steps:
@@ -18,17 +18,15 @@ on:
         - name: Setup Node.js environment
           uses: actions/setup-node@v6.5.0
           with: 
-                node-version: '22'
-        -name: Install newman and htmlextra globally
-        run: |
+            node-version: '22'
+
+        - name: Install newman and htmlextra globally
+          run: |
                npm install -g newman 
                npm install -g newman-reporter-htmlextra
-        -name: Run the Potsman Collection with Newman
-        run:  |
+        - name: Run the Potsman Collection with Newman
+          run: |
               newman run 'InWarrenty-flow collection QA.postman_collection.json' \
               -e 'QA.postman_environment.json' \
               -d 'testdata.csv' \
               -r cli,htmlextra
-         
-                
-          
