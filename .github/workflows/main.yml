@@ -56,14 +56,14 @@ jobs:
               server_port: 465
               username: ${{ secrets.EMAIL_USERNAME }}
               password: ${{ secrets.EMAIL_PASSWORD }}
-              subject: API Test Report - Github Actions
+              subject: Phoenix In-Warrenty Flow Test Execution Notification
               to: abhilashagadgil2026@gmail.com
               from: Abhilasha from Github Actions <${{ secrets.EMAIL_USERNAME }}>
               body: |
                     Hello,
-
-                    Please find teh attached HTML report generated after running Postman tests via GitHub Actions.
-                    Link to live report (GitHub Pages) : https://abhilashag24.github.io/Phoenix-In-Warranty-Flow/
+          
+                    Phoenix inwarrenty flow tests has been executed. The report has been published and the
+                    Link to live report is: https://abhilashag24.github.io/Phoenix-In-Warranty-Flow/
 
                     Regards,
         
