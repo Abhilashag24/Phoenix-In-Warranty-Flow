@@ -10,7 +10,7 @@ on:
     #- cron: '00 06 * * 1-5' -> Runs five days mon to fri
 jobs:
      run_postman_tests:
-       runs-on: ec2-github-runner
+       runs-on: ubuntu-latest
        steps:
         - name: Checkout the code
           uses: actions/checkout@v6.1.0
