@@ -6,7 +6,7 @@ GitHub Actions will trigger project execution on every PUSH to the main branch. 
 The HTML report is archived and kept in the artifacts section for the team to download it. Along with that they can view reports directly from the GitHub page: https://abhilashag24.github.io/Phoenix-In-Warranty-Flow/
 The latest report is mailed to the team members using Gmail SMTP.
 
-## 
+## Tech Stack##
 1. Postman
 2. Node.js V24
 3. Newman
